@@ -4,6 +4,9 @@
 	<head>
 		<!--
 		Todo:
+
+		Ideas:
+		Heaven to hell theme. As the page scrolls down, the backgrounds go from the clouds to underground cities, mines etc
 		-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +16,6 @@
 		<title>You don't seem to understand...</title>
 	</head>
 
-	<div class="headerbar">
-		<p>
-			BREAKING NEWS || Section 1 || Section 2 || Section 3 || Section 4 || Section 5 ...
-		</p>
-	</div>
 
 	<body>
 		 <audio loop>
@@ -26,9 +24,17 @@
 
 
 		<main>
+			<div class="marquee">
+				<p> 
+					BREAKING NEWS || Section 1 || Section 2 || Section 3 || Section 4 || Section 5 ...
+				</p>
+			</div>
+
+			<img style="margin:0;width:100%;height:10%;position:fixed;z-index:999;margin-top:40px;" src="/static/images/lights.png">
+			
 			<div class="section-1">
 				<img class="profileimg" src="/static/images/ram.png">
-				<h2>
+				<h2 class="profilename">
 					np531
 				</h2>
 			</div>
@@ -42,6 +48,7 @@
 				<video loop autoplay muted src="./static/images/videos/duck.mov"> </video>
 				<img width=1000 src="./static/images/bgs/aquarium.jpg" alt="background"/> 
 				-->
+			<div>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
 				</p>
@@ -51,6 +58,7 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
 				</p>
+			</div>
 		</main>
 
 		<footer>
