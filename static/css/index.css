@@ -1,12 +1,127 @@
-html body{
+@font-face {
+  font-family: 'FiraMono';
+  src:  url('/static/fonts/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'blocky';
+  src:  url('/static/fonts/04b03.TTF') format('truetype');
+}
+
+body{
 	background: #000;	
-	background-image: url('../images/bgs/aquarium.jpg');
 }
 
 h1 {
+	font-size: 40px;
+	font-family: FiraMono;
 	color: #FFF;
 }
 
 p {
+	font-size: 20px;
+	font-family: FiraMono;
 	color: #FFF;
+}
+
+div {
+	width: 100%;
+	border: 2px;
+	border-style: solid;
+	border-color: #FFF;
+}
+
+.section-1{
+	height: 80vh;
+	
+	font-family: blocky;
+
+	background-image: url("/static/images/aquarium.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.profileimg {
+	position: absolute;
+	top: calc(80vh - 440px);
+	left: 20vh;
+	filter: drop-shadow(3px 3px 0 black) drop-shadow(-1px -1px 0 black);
+}
+
+.section-2{
+	height: 50vh;
+}
+
+.headerbar {
+  color: #fff;
+  width: 100%;
+  white-space: nowrap;
+  animation: HeaderMarqueeAnim 30s linear infinite;
+    animation-name: HeaderMarqueeAnim;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-timeline: ;
+}
+
+
+body::before {
+  /* :  ^   ) */
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  background-image: url("../images/scan.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 10000000;
+  animation: ScanlineAnimationLeft 2s linear infinite;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+body::after {
+  /* :  ^   ) */
+  content: "";
+  display: block;
+  position: fixed;
+  left: -32px;
+  top: 0;
+  width: calc(100% + 32px);
+  height: calc(100% + 32px);
+  background-image: url("../images/scan.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 10000000;
+  animation: ScanlineAnimationRight 0.4s linear infinite;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+@keyframes ScanlineAnimationLeft {
+  /* :  ^   ) */
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(-32px) translateY(-32px);
+  }
+}
+
+@keyframes ScanlineAnimationRight {
+  /* :  ^   ) */
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateX(32px) translateY(-32px);
+  }
 }
