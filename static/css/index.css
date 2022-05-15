@@ -17,19 +17,37 @@ body{
 
 h1 {
 	font-size: 50px;
-	font-family: FiraMono;
+	/* font-family: FiraMono; */
+	font-family: "blocky";
 	color: #FFF;
 }
 
 p {
 	font-size: 20px;
-	font-family: FiraMono;
+	/* font-family: FiraMono; */
+	font-family: "blocky";
 	color: #FFF;
 }
 
 .maindiv {
-	width: 100%;
+	width: 99.8%;
 	border: 2px solid #fff;
+	overflow: hidden;
+}
+
+.titlesection {
+	width: 100%;
+	height: auto;
+	background-image: url("/static/images/comfy.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.titlesection h1{
+	text-align: center;
+	text-shadow: 5px 6px #000, 1px -1px #000, 2px 1px #000, -1px 1px #000, 1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
 }
 
 .section-1{
@@ -43,56 +61,51 @@ p {
 	background-size: cover;
 }
 
-/* .section-1 hr { */
-/* 	width:100%; */
-/* 	border-width: 4px; */
-/* 	color: white; */
-/* 	background-color: white; */
-/* 	margin-top: 80vh; */
-/* 	position:absolute; */
-
-/* } */
-
 .profileimg {
-	position: absolute;
-	height: 300px;
+	position: inline;
 	top: calc(80vh - 440px);
-	left: 20vh;
+	text-align: center;
+}
+
+.profileimg img{
+	height: 300px;
 	filter: drop-shadow(3px 3px 0 black) drop-shadow(-1px -1px 0 black);
 }
 
 .profilename {
+	position: inline;
+	margin: auto;
+	margin-top: 20vh;
+}
+
+.profilename h1 {
+	text-shadow: 4px 7px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000, 1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
 	color: #FFF;
 	font-size: 10rem;
-	
-	position: inline;
-	margin-top 0;
-	top: 45vh;
-	left: 70vw;
-
-	text-shadow: 4px 7px #000, 0px -1px #000, 0px 1px #000, -1px 0px #000, 1px 0px #000, -1px -1px #000, 1px 1px #000, -1px 1px #000, 1px -1px #000;
+	text-align: center;
 }
 
 .section-2{
-	height: 75vh;
+	font-family: "blocky";
+	/* height: 75vh; */
 	background: #1c252d;
 }
 
 .intro-text {
-	width: 50%;
+	width: 33.3%;
 	float: left;
 	display: inline-block;
 	text-align: center;
+	align-items: center;
 	overflow: hidden;
 }
 
-.link {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index:100
+.intro-contents{
+	width: 33.3%;
+	float: right;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
 }
 
 .contents-box {
@@ -105,7 +118,9 @@ p {
 	line-height: 2;
 	text-align: center;
 
-	font-family: Helvetica, Arial, sans-serif;
+	color:red;
+
+	/* font-family: Helvetica, Arial, sans-serif; */
 	font-weight: bold;
 
 	cursor: pointer;
@@ -115,22 +130,29 @@ p {
 }
 
 .intro-pic {
-	width: 50%;
+	width: 33.3%;
 	display: inline-block;
+	overflow: hidden;
 }
 
-.intro-pic3 {
-	width:23rem;
-	display: inline-block;
+.intro-pic2 {
+	width:24rem;
 	position: relative;
-	display: block;
-	/* left: 0%; */
-	/* text-align: left; */
-	margin: auto;
+	text-align: center;
+	display: inline-block;
 	margin-top: 40px;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
+	margin-bottom: 40px;
 	border: 6px double black;
+}
+
+.section-3 {
+	
+}
+
+.pet-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 }
 
 .marquee {
